@@ -1,19 +1,28 @@
-<div class=" container-lg mt-4" >
-  <ul class="nav nav-pills" style="display:flex; justify-content:space-evenly ;">
+<div class=" container-lg mt-4 pt-5" >
+  <!-- <ul class="nav nav-pills" style="display:flex; justify-content:space-evenly ;">
       <li class="nav-item">
-        <a routerLink="/column-chart" class="nav-link active" aria-current="page"  routerLink="active">Column Chart</a>
+        <a routerLink="/column-chart" class="nav-link active" aria-current="page"  routerLinkActive="active">Column Chart</a>
       </li>
       <li class="nav-item">
-        <a routerLink="/line-chart" class="nav-link"  routerLink="active">Line Chart</a>
+        <a routerLink="/line-chart" class="nav-link"  routerLinkActive="active">Line Chart</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link"  routerLink="active">Pie Chart</a>
+        <a routerLink="/pie-chart" class="nav-link"  routerLinkActive="active">Pie Chart</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="active" >Gantt Chart</a>
+        <a class="nav-link" routerLinkActive="active" >Gantt Chart</a>
       </li>
-    </ul>
-</div>
+    </ul> -->
+
+    <mdb-tabs>
+      <mdb-tab title="Column-chart"><app-column-chart></app-column-chart></mdb-tab>
+      <mdb-tab title="Line-chart"><app-line-chart></app-line-chart></mdb-tab>
+      <mdb-tab title="Pie Chart"><app-pie-chart></app-pie-chart></mdb-tab>
+    </mdb-tabs>
+</div> 
 
 <!-- <app-column-chart></app-column-chart> -->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+
+
+

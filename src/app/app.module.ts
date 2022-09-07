@@ -9,6 +9,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { FormsModule } from '@angular/forms';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
     AppRoutingModule,
     NgbModule,
     NgChartsModule,
-    FormsModule
+    FormsModule,
+    MdbTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
