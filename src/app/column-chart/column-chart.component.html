@@ -1,0 +1,42 @@
+
+<div class="container-lg mt-5">
+    <div >
+       <input type="text" name="name" id="" style="margin: 20px;" placeholder="Enter Name:" [(ngModel)] ="name"/> {{name}}
+       <input type="text" name="progress" placeholder="Enter Value:" [(ngModel)]= "completed"> {{completed}}
+
+       <button class="btn btn-primary" style="margin: 10px;" (click)="updateChart()">Update</button>
+       <button class="btn btn-dark" style="margin: 10px;" (click)="generateChart()">GenerateChart</button>
+    </div>
+       
+
+           <!-- <h2 class="list-group-item"></h2> -->
+           <table class="table table-striped mt-5">
+               <thead>
+                   <tr style="background-color:teal;">
+                       <th scope="col">No</th>
+                       <th scope="col">Name</th>
+                       <th scope="col">Progress</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr *ngFor="let item of updateName; let i=index">
+                       <td>{{i+1}}</td>
+                       <td>{{item}}</td>
+                       <td><ngb-progressbar type="success" textType="" [value]=updateCompleted[i] [showValue]="true"></ngb-progressbar></td>
+                   </tr>
+
+               </tbody>
+           </table>
+
+       <br>
+       <br>
+       <br>
+
+       <canvas baseChart style="height: 400px; width: 800px;"
+           [data]="barChartData"
+           [options]="barChartOptions"
+           [plugins]="barChartPlugins"
+           [legend]="barChartLegend"
+           [type]="'bar'">
+       </canvas>
+</div>
