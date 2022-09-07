@@ -7,11 +7,13 @@ import { ColumnChartComponent } from './column-chart/column-chart.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgChartsModule } from 'ng2-charts';
 import { FormsModule } from '@angular/forms';
+import { LineChartComponent } from './line-chart/line-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ColumnChartComponent
+    ColumnChartComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
