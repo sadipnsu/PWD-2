@@ -8,12 +8,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgChartsModule } from 'ng2-charts';
 import { FormsModule } from '@angular/forms';
 import { LineChartComponent } from './line-chart/line-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ColumnChartComponent,
-    LineChartComponent
+    LineChartComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,
